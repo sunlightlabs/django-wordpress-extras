@@ -1,4 +1,4 @@
-http://sunlightfoundation.com{{ post.get_absolute_url }}#comment-{{ disqus_id }}
+http://{{ site.domain }}{{ post.get_absolute_url }}#comment-{{ disqus_id }}
 
 Disqus moderation: http://disqus.com/admin/moderate/
 

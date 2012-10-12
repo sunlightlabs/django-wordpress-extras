@@ -20,6 +20,13 @@ Be sure to put *wordpressext* **above** *wordpress* in urls.py::
         ...
     )
 
+Email sender is determined in the following order:
+
+    #. **settings.WPEXT_SENDER** email address
+    #. **settings.POSTMARK_SENDER** if Postmark settings are configured and WPEXT_SENDER does not exist
+    #. **settings.ADMINS** the first admin email address, if POSTMARK_SENDER does not exist
+
+
 --------
 Features
 --------
