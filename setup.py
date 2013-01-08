@@ -10,7 +10,10 @@ setup(
     author='Jeremy Carbaugh',
     author_email='jcarbaugh@sunlightfoundation.com',
     url='http://github.com/sunlightlabs/django-wordpress-extras/',
-    packages=['wordpressext'],
+    packages=[
+        'wordpressext',
+        'wordpressext.templatetags',
+    ],
     package_data={'wordpressext': ['templates/wordpressext/mail/*.txt']},
     classifiers=[
         'Development Status :: 4 - Beta',
