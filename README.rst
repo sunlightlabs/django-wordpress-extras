@@ -31,6 +31,14 @@ Email sender is determined in the following order:
 Features
 --------
 
+Parse.ly Meta Template Tag
+==========================
+
+Generate a `Parse.ly <http://parse.ly/>`_ meta tag::
+
+    {% parselymeta post %}
+
+
 Disqus Comment Notifications
 ============================
 
