@@ -58,11 +58,14 @@ def disqus(request, year, month, day, slug):
 
             # send the mail
 
+            recipients = getattr(settings, 'DISQUS_CC', None) or []
+            recipients.append(post.author.email)
+
             send_mail(
                 subject=subject,
                 message=body,
                 from_email=_get_sender(),
-                recipient_list=[post.author.email],
+                recipient_list=recipients,
             )
 
     return HttpResponse("")
