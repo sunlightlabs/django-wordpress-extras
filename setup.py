@@ -4,7 +4,7 @@ long_description = open('README.rst').read()
 
 setup(
     name='the-real-django-wordpress-extras',
-    version="0.3",
+    version="0.4",
     description="A collection of non-WordPress extensions for django-wordpress (the real one)",
     long_description=long_description,
     author='Jeremy Carbaugh',

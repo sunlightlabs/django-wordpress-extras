@@ -58,7 +58,7 @@ def disqus(request, year, month, day, slug):
 
             # send the mail
 
-            recipients = getattr(settings, 'DISQUS_CC', None) or []
+            recipients = list(getattr(settings, 'DISQUS_CC', None) or [])
             recipients.append(post.author.email)
 
             send_mail(
